@@ -6,7 +6,7 @@
 
 회고 링크 - https://potato-dev.tistory.com/108
 
-어플 링크 - https://play.google.com/store/apps/details?id=com.yogo.wifood(실행은 안됩니다...)
+어플 링크 - https://play.google.com/store/apps/details?id=com.yogo.wifood (실행은 안됩니다...)
 
 ## 멤버
 
