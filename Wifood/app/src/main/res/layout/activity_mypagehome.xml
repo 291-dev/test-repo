@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageButton
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back_arrow" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/pbold"
+        android:text="마이페이지"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/lineTop"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/enable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imageProfile"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/default_profile"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#FFFFFFFF"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textNickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/rbold"
+        android:text="닉네임"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="99dp"
+        android:fontFamily="@font/rregular"
+        android:text="UserName@wifood.com"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/buttonModifyProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="17dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_right_button"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <View
+        android:id="@+id/viewMiddle"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="140dp"
+        android:background="#E7E7E7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonModifyMyInfo"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="147dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:drawableRight="@drawable/ic_right_button"
+        android:fontFamily="@font/rmedium"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="내 정보 수정하기"
+        android:textAlignment="textStart"
+        android:textSize="13sp"
+        style="?android:attr/borderlessButtonStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonModifyMyFavorite"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:drawableRight="@drawable/ic_right_button"
+        android:fontFamily="@font/rmedium"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="내 입맛 수정하기"
+        android:textAlignment="textStart"
+        android:textSize="13sp"
+        style="?android:attr/borderlessButtonStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonModifyMyInfo"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSetting"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:drawableRight="@drawable/ic_right_button"
+        android:fontFamily="@font/rmedium"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="설정"
+        android:textAlignment="textStart"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        style="?android:attr/borderlessButtonStyle"
+        app:layout_constraintTop_toBottomOf="@+id/buttonModifyMyFavorite" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonLogout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/rmedium"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:shadowColor="@color/white"
+        android:text="로그아웃"
+        android:textAlignment="textStart"
+        android:textSize="13sp"
+        style="?android:attr/borderlessButtonStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSetting" />
+
+
+    <TextView
+        android:id="@+id/textBottomBox"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@drawable/btn_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonGoMap"
+        android:layout_width="28dp"
+        android:layout_height="49dp"
+        android:background="@color/white"
+        android:drawableTop="@drawable/ic_map_full_icon"
+        style="?android:attr/borderlessButtonStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/buttonGoList"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="@+id/textBottomBox"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonGoList"
+        android:layout_width="36dp"
+        android:layout_height="49dp"
+        android:background="@color/white"
+        android:drawableTop="@drawable/ic_list_full_icon"
+        style="?android:attr/borderlessButtonStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textBottomBox"
+        app:layout_constraintTop_toTopOf="@+id/textBottomBox" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonGoMyPage"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        android:background="@color/white"
+        android:drawableTop="@drawable/ic_mypage_full_icon"
+        android:fontFamily="@font/pmedium"
+        android:text="마이페이지"
+        android:textColor="@color/main"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/buttonGoList"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="@+id/textBottomBox" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
